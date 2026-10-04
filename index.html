@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="x-apple-disable-message-reformatting">
+  <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+  <meta name="color-scheme" content="light">
+  <meta name="supported-color-schemes" content="light">
+  <title>Talento | Day to Night Collection</title>
+
+  <!-- Fraunces Light nas headlines e Poppins Light no texto (a mesma do site talentojoias.com.br).
+       Carregam no Apple Mail, iOS e alguns Androids; nos demais entram Georgia e Arial. -->
+  <!--[if !mso]><!-->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300&family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <!--<![endif]-->
+
+  <!--[if mso]>
+  <noscript><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml></noscript>
+  <style>
+    table, td, a, p, div { font-family: Arial, Helvetica, sans-serif !important; }
+    .serif { font-family: Georgia, 'Times New Roman', serif !important; }
+  </style>
+  <![endif]-->
+
+  <style>
+    body { margin:0; padding:0; width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; }
+    table { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; }
+    img { border:0; outline:none; text-decoration:none; display:block; -ms-interpolation-mode:bicubic; }
+    a { text-decoration:none; }
+
+    @media screen and (max-width:620px) {
+      .container { width:100% !important; }
+      .px { padding-left:20px !important; padding-right:20px !important; }
+      .stack { display:block !important; width:100% !important; max-width:100% !important; }
+      .stack-pad { padding:0 0 16px 0 !important; }
+      .stack-pad-lg { padding:0 0 40px 0 !important; }
+      .hide-m { display:none !important; }
+      .show-m { display:table-cell !important; max-height:none !important; overflow:visible !important; }
+      .fluid { width:100% !important; max-width:100% !important; height:auto !important; }
+      .center-m { text-align:center !important; }
+      .img-center-m { margin:0 auto !important; }
+      .nav-side { font-size:9px !important; }
+      .logo { font-size:24px !important; letter-spacing:5px !important; }
+      .h-intro { font-size:15px !important; letter-spacing:2px !important; }
+      .section-title { font-size:12px !important; letter-spacing:1px !important; }
+      .h-title { font-size:24px !important; }
+      .row-gap { height:0 !important; }
+    }
+  </style>
+
+  <!-- ANIMAÇÕES: em bloco separado de propósito. Se algum cliente (ex.: Gmail) descartar este
+       bloco por não suportar @keyframes, o bloco responsivo acima continua funcionando.
+       A colagem usa GIFs animados, que rodam também no Gmail (no Outlook do Windows aparece o 1º quadro). -->
+  <style>
+    /* Hover nos botões (desktop) */
+    .btn-dark { transition:background-color .3s ease; }
+    .btn-dark:hover { background-color:#555555 !important; }
+    .btn-warm { transition:background-color .3s ease; }
+    .btn-warm:hover { background-color:#6F6C68 !important; }
+    .btn-teal { transition:background-color .3s ease; }
+    .btn-teal:hover { background-color:#1F4A45 !important; }
+
+    /* Hover nos cards de produto: borda leve */
+    .card { transition:border-color .3s ease; }
+    .card:hover { border-color:#BFBFBF !important; }
+
+    /* Brilho passando sobre as joias */
+    .shine { position:relative; overflow:hidden; display:inline-block; }
+    .shine::after {
+      content:""; position:absolute; top:0; left:-80%; width:50%; height:100%;
+      background:linear-gradient(100deg, rgba(255,255,255,0) 0%, rgba(255,255,255,.65) 50%, rgba(255,255,255,0) 100%);
+      animation:shine 4.5s ease-in-out infinite;
+    }
+    .shine-2::after { animation-delay:.5s; }
+    .shine-3::after { animation-delay:1s; }
+    @keyframes shine {
+      0%   { left:-80%; }
+      35%  { left:130%; }
+      100% { left:130%; }
+    }
+
+    /* Fade-in do título e do texto */
+    @keyframes fadeUp {
+      from { opacity:0; transform:translateY(10px); }
+      to   { opacity:1; transform:translateY(0); }
+    }
+    .fade-in   { animation:fadeUp 1.2s ease-out both; }
+    .fade-in-2 { animation:fadeUp 1.2s ease-out .4s both; }
+
+    /* Respeita quem desativou animações no sistema */
+    @media (prefers-reduced-motion: reduce) {
+      .shine::after, .fade-in, .fade-in-2 { animation:none !important; }
+    }
+  </style>
+</head>
+<body style="margin:0; padding:0; background-color:#F2F2F2;">
+
+  <!-- PREHEADER -->
+  <div style="display:none; font-size:1px; line-height:1px; max-height:0; max-width:0; opacity:0; overflow:hidden; mso-hide:all;">
+    Conheça a Day to Night Collection: joias que acompanham você do dia à noite.
+  </div>
+
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#F2F2F2" style="background-color:#F2F2F2;">
+    <tr>
+      <td align="center" style="padding:0;">
+
+        <!--[if mso]><table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+        <table role="presentation" class="container" width="600" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF" style="width:600px; max-width:600px; background-color:#FFFFFF;">
+
+          <!-- ============ HEADER (branco) ============ -->
+          <tr>
+            <td bgcolor="#FFFFFF" style="background-color:#FFFFFF; padding:20px 40px 18px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td width="110" align="center" valign="middle" class="nav-side" style="font-family:'Poppins', Arial, Helvetica, sans-serif; font-size:10px; font-weight:300; letter-spacing:1px; color:#222222;">
+                    <a href="https://talentojoias.com.br/shop.html" style="color:#222222; text-decoration:none;">SHOP</a>
+                  </td>
+                  <td align="center" valign="middle">
+                    <div class="logo serif" style="font-family:'Fraunces', Georgia, 'Times New Roman', serif; font-size:28px; line-height:30px; font-weight:300; letter-spacing:6px; color:#222222; padding-left:6px;"><a href="https://talentojoias.com.br/" style="color:#222222; text-decoration:none;">TALENTO</a></div>
+                    <div class="serif" style="font-family:'Fraunces', Georgia, 'Times New Roman', serif; font-size:6px; line-height:10px; font-weight:300; letter-spacing:1.2px; color:#222222; padding-top:8px;">HANDMADE MASTERPIECES</div>
+                    <div class="serif" style="font-family:'Fraunces', Georgia, 'Times New Roman', serif; font-size:9px; line-height:12px; font-weight:300; letter-spacing:1px; font-variant-numeric:oldstyle-nums; color:#222222; padding-top:3px;">1990</div>
+                  </td>
+                  <td width="110" align="center" valign="middle" class="nav-side" style="font-family:'Poppins', Arial, Helvetica, sans-serif; font-size:10px; font-weight:300; letter-spacing:1px; color:#222222;">
+                    <a href="https://talentojoias.com.br/lojas" style="color:#222222; text-decoration:none;">LOJAS</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- ============ CORPO COM DEGRADÊ DIAGONAL ============
+               IMAGEM DE FUNDO: Assets/Talent_Grad_bg_diagonal.jpg (600x1948, gerada a partir do Talent_Grad_bg.jpg):
+               amarelo-creme no canto superior esquerdo → branco → azul-lavanda no canto inferior direito, a 45°.
+               Ela foi gerada na proporção deste bloco no desktop, então o ângulo fica certo com background-size 100% 100%.
+               Depois de hospedar, troque o caminho pela URL completa nos TRÊS lugares abaixo
+               (background=, background-image e v:fill). -->
+          <tr>
+            <td valign="top" bgcolor="#FCFBF7" background="https://cdn.jsdelivr.net/gh/caiqueworks/talentojoias-dani@2defffcbac505862fdb6ab3469d91d0c287a771e/Assets/Talent_Grad_bg_diagonal.jpg" style="background-color:#FCFBF7; background-image:url('https://cdn.jsdelivr.net/gh/caiqueworks/talentojoias-dani@2defffcbac505862fdb6ab3469d91d0c287a771e/Assets/Talent_Grad_bg_diagonal.jpg'); background-size:100% 100%; background-repeat:no-repeat; background-position:center top;">
+              <!--[if gte mso 9]>
+              <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;">
+                <v:fill type="frame" src="https://cdn.jsdelivr.net/gh/caiqueworks/talentojoias-dani@2defffcbac505862fdb6ab3469d91d0c287a771e/Assets/Talent_Grad_bg_diagonal.jpg" color="#FCFBF7" />
+                <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+              <![endif]-->
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+
+                <!-- ===== ABERTURA ===== -->
+                <tr>
+                  <td align="center" class="h-intro serif" style="padding:28px 20px 24px; font-family:'Fraunces', Georgia, 'Times New Roman', serif; font-size:18px; line-height:22px; font-weight:300; letter-spacing:3px; color:#222222;">
+                    <a href="https://talentojoias.com.br/catalogo-day-to-night" style="color:#222222; text-decoration:none;">APRESENTA - DAY TO NIGHT</a>
+                  </td>
+                </tr>
+
+                <!-- ===== HERO ===== -->
+                <!-- IMAGEM 01 | Hero | 600x286 (Assets/email-v2/01-hero.jpg, recorte da foto 14)
+                     Sem filtro nem animação: a foto aparece com a cor original. -->
+                <tr>
+                  <td style="padding:0;">
+                    <a href="https://talentojoias.com.br/catalogo-day-to-night"><img src="https://cdn.jsdelivr.net/gh/caiqueworks/talentojoias-dani@2defffcbac505862fdb6ab3469d91d0c287a771e/Assets/email-v2/01-hero.jpg" width="600" height="286" alt="Modelo usando brinco Talento da coleção Day to Night" class="fluid" style="width:100%; max-width:600px; height:auto;"></a>
+                  </td>
+                </tr>
+
+                <!-- ===== EXCLUSIVIDADE ===== -->
+                <tr>
+                  <td align="center" class="px" style="padding:48px 70px 24px;">
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
+                      <td class="section-title serif" align="center" style="font-family:'Fraunces', Georgia, 'Times New Roman', serif; font-size:14px; line-height:20px; font-weight:300; letter-spacing:2px; color:#222222; padding:0 0 5px; border-bottom:1px solid #BDBDBD;">
+                        EXCLUSIVIDADE QUE ACOMPANHA SEU RITMO
+                      </td>
+                    </tr></table>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="px" style="padding:0 70px 56px;">
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <!-- Produto 1 -->
+                        <td class="stack stack-pad" width="150" valign="top">
+                          <table role="presentation" class="card" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF" style="background-color:#FFFFFF; border:1px solid #FFFFFF;">
+                            <tr>
+                              <td align="center" style="padding:10px 10px 6px;">
+                                <!-- IMAGEM 02 | Colar | 130x130, produto inteiro (Assets/email-v2/02-colar.jpg) -->
+                                <div class="shine"><a href="https://talentojoias.com.br/colar-ouro-branco-com-diamantes-e-berilos-cl2594061783103841.html"><img src="https://cdn.jsdelivr.net/gh/caiqueworks/talentojoias-dani@2defffcbac505862fdb6ab3469d91d0c287a771e/Assets/email-v2/02-colar.jpg" width="130" height="130" alt="Colar Talento em ouro com diamantes" style="width:130px; height:auto;"></a></div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" style="padding:0 0 14px;">
+                                <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
+                                  <td class="btn-warm" bgcolor="#928F8B" style="background-color:#928F8B; padding:3px 14px; font-size:8px; line-height:10px; mso-line-height-rule:exactly;">
+                                    <a href="https://talentojoias.com.br/colar-ouro-branco-com-diamantes-e-berilos-cl2594061783103841.html" style="font-family:'Poppins', Arial, Helvetica, sans-serif; font-size:8px; line-height:10px; font-weight:300; letter-spacing:1px; color:#FFFFFF; text-decoration:none;">COMPRAR</a>
+                                  </td>
+                                </tr></table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td class="hide-m" width="5" style="font-size:0; line-height:0;">&nbsp;</td>
+                        <!-- Produto 2 -->
+                        <td class="stack stack-pad" width="150" valign="top">
+                          <table role="presentation" class="card" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF" style="background-color:#FFFFFF; border:1px solid #FFFFFF;">
+                            <tr>
+                              <td align="center" style="padding:10px 10px 6px;">
+                                <!-- IMAGEM 03 | Brincos | 130x130, produto inteiro (Assets/email-v2/03-brincos.jpg) -->
+                                <div class="shine shine-2"><a href="https://talentojoias.com.br/brinco-ouro-branco-com-diamantes-esmeraldas-e-tanzanitas-br554201.html"><img src="https://cdn.jsdelivr.net/gh/caiqueworks/talentojoias-dani@2defffcbac505862fdb6ab3469d91d0c287a771e/Assets/email-v2/03-brincos.jpg" width="130" height="130" alt="Brincos Talento com turmalina paraíba e tanzanita" style="width:130px; height:auto;"></a></div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" style="padding:0 0 14px;">
+                                <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
+                                  <td class="btn-warm" bgcolor="#928F8B" style="background-color:#928F8B; padding:3px 14px; font-size:8px; line-height:10px; mso-line-height-rule:exactly;">
+                                    <a href="https://talentojoias.com.br/brinco-ouro-branco-com-diamantes-esmeraldas-e-tanzanitas-br554201.html" style="font-family:'Poppins', Arial, Helvetica, sans-serif; font-size:8px; line-height:10px; font-weight:300; letter-spacing:1px; color:#FFFFFF; text-decoration:none;">COMPRAR</a>
+                                  </td>
+                                </tr></table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td class="hide-m" width="5" style="font-size:0; line-height:0;">&nbsp;</td>
+                        <!-- Produto 3 -->
+                        <td class="stack" width="150" valign="top">
+                          <table role="presentation" class="card" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF" style="background-color:#FFFFFF; border:1px solid #FFFFFF;">
+                            <tr>
+                              <td align="center" style="padding:10px 10px 6px;">
+                                <!-- IMAGEM 04 | Anel | 130x130, produto inteiro (Assets/email-v2/04-anel.jpg) -->
+                                <div class="shine shine-3"><a href="https://talentojoias.com.br/anel-ouro-amarelo-com-diamantes-an304001.html"><img src="https://cdn.jsdelivr.net/gh/caiqueworks/talentojoias-dani@2defffcbac505862fdb6ab3469d91d0c287a771e/Assets/email-v2/04-anel.jpg" width="130" height="130" alt="Anel Talento em ouro amarelo" style="width:130px; height:auto;"></a></div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" style="padding:0 0 14px;">
+                                <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
+                                  <td class="btn-warm" bgcolor="#928F8B" style="background-color:#928F8B; padding:3px 14px; font-size:8px; line-height:10px; mso-line-height-rule:exactly;">
+                                    <a href="https://talentojoias.com.br/anel-ouro-amarelo-com-diamantes-an304001.html" style="font-family:'Poppins', Arial, Helvetica, sans-serif; font-size:8px; line-height:10px; font-weight:300; letter-spacing:1px; color:#FFFFFF; text-decoration:none;">COMPRAR</a>
+                                  </td>
+                                </tr></table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+
+                <!-- ===== DAY TO NIGHT ===== -->
+                <!-- IMAGEM 05 | Destaque | 460x248 (Assets/email-v2/05-destaque.jpg, recorte da foto 12)
+                     Imagem de fundo: troque a URL nos TRÊS lugares (background=, background-image e v:fill). -->
+                <tr>
+                  <td class="px" style="padding:0 70px;">
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td height="248" valign="bottom" align="center" bgcolor="#E3DEDA" background="https://cdn.jsdelivr.net/gh/caiqueworks/talentojoias-dani@2defffcbac505862fdb6ab3469d91d0c287a771e/Assets/email-v2/05-destaque.jpg" style="background-color:#E3DEDA; background-image:url('https://cdn.jsdelivr.net/gh/caiqueworks/talentojoias-dani@2defffcbac505862fdb6ab3469d91d0c287a771e/Assets/email-v2/05-destaque.jpg'); background-size:cover; background-position:center; height:248px;">
+                          <!--[if gte mso 9]>
+                          <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:460px;height:248px;">
+                            <v:fill type="frame" src="https://cdn.jsdelivr.net/gh/caiqueworks/talentojoias-dani@2defffcbac505862fdb6ab3469d91d0c287a771e/Assets/email-v2/05-destaque.jpg" color="#E3DEDA" />
+                            <v:textbox inset="0,0,0,0">
+                          <![endif]-->
+                          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                            <tr><td height="216" style="font-size:0; line-height:0;">&nbsp;</td></tr>
+                            <tr>
+                              <td align="center" style="padding:0 0 16px;">
+                                <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
+                                  <td class="btn-teal" bgcolor="#0F2B28" style="background-color:#0F2B28; padding:3px 12px; font-size:8px; line-height:10px; mso-line-height-rule:exactly;">
+                                    <a href="https://talentojoias.com.br/catalogo-day-to-night" style="font-family:'Poppins', Arial, Helvetica, sans-serif; font-size:8px; line-height:10px; font-weight:300; letter-spacing:1px; color:#FFFFFF; text-decoration:none;">VER COLEÇÃO</a>
+                                  </td>
+                                </tr></table>
+                              </td>
+                            </tr>
+                          </table>
+                          <!--[if gte mso 9]>
+                            </v:textbox>
+                          </v:rect>
+                          <![endif]-->
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="px" style="padding:22px 70px 0;">
+                    <div class="h-title serif fade-in" style="font-family:'Fraunces', Georgia, 'Times New Roman', serif; font-size:22px; line-height:26px; font-weight:300; color:#222222;"><a href="https://talentojoias.com.br/catalogo-day-to-night" style="color:#222222; text-decoration:none;">Day To Night</a></div>
+                    <p class="fade-in-2" style="margin:10px 0 0; font-family:'Poppins', Arial, Helvetica, sans-serif; font-size:12px; line-height:18px; font-weight:300; color:#333333; max-width:360px;">
+                      Uma seleção curada especialmente para você. Carregue a leveza da luz e a imponência da noite em obras de arte que transformam qualquer hora do dia.
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="px" style="padding:16px 70px 64px;">
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
+                      <td class="btn-dark" bgcolor="#222222" style="background-color:#222222; padding:3px 14px; font-size:8px; line-height:10px; mso-line-height-rule:exactly;">
+                        <a href="https://talentojoias.com.br/catalogo-day-to-night" style="font-family:'Poppins', Arial, Helvetica, sans-serif; font-size:8px; line-height:10px; font-weight:300; letter-spacing:1px; color:#FFFFFF; text-decoration:none;">EXPLORE</a>
+                      </td>
+                    </tr></table>
+                  </td>
+                </tr>
+
+                <!-- ===== SELECIONADOS PARA VOCÊ =====
+                     Como na referência: coluna da esquerda alinhada à esquerda, coluna da direita alinhada à direita;
+                     nome em caixa alta, ficha técnica em linhas e um fio fino fechando cada produto. -->
+                <tr>
+                  <td align="center" class="px" style="padding:0 70px 28px;">
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
+                      <td class="section-title serif" align="center" style="font-family:'Fraunces', Georgia, 'Times New Roman', serif; font-size:14px; line-height:20px; font-weight:300; letter-spacing:2px; color:#222222; padding:0 0 5px; border-bottom:1px solid #BDBDBD;">
+                        SELECIONADOS PARA VOCÊ
+                      </td>
+                    </tr></table>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="px hide-m" style="padding:0 70px;">
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                      <!-- Linha 1 -->
+                      <tr>
+                        <!-- Produto 06 (alinhado à esquerda) -->
+                        <td class="stack stack-pad-lg" width="190" valign="top">
+                          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                            <tr><td align="left"><a href="https://talentojoias.com.br/anel-ouro-branco-com-diamante-esmeralda-e-tanzanita-an315102.html"><img src="https://cdn.jsdelivr.net/gh/caiqueworks/talentojoias-dani@2defffcbac505862fdb6ab3469d91d0c287a771e/Assets/email-v2/06-anel-tanzanita-esmeralda.jpg" width="170" height="170" alt="Anel ouro branco com diamante, esmeralda e tanzanita" class="img-center-m" style="width:170px; height:auto;"></a></td></tr>
+                            <tr>
+                              <td class="center-m" align="left" style="padding:14px 0 0; font-family:'Poppins', Arial, Helvetica, sans-serif; font-size:10px; line-height:13px; font-weight:300; letter-spacing:0.3px; color:#222222;">
+                                <a href="https://talentojoias.com.br/anel-ouro-branco-com-diamante-esmeralda-e-tanzanita-an315102.html" style="color:#222222; text-decoration:none;">ANEL OURO BRANCO COM DIAMANTE ESMERALDA E TANZANITA</a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="center-m" align="left" style="padding:10px 0 14px; font-family:'Poppins', Arial, Helvetica, sans-serif; font-size:8px; line-height:12px; font-weight:300; color:#333333; border-bottom:1px solid #BDBDBD;">
+                                METAL: Ouro 18k<br>DIAMANTES: 1 Diamante – 0,32Ct<br>COR: H<br>PUREZA: VS<br>ACABAMENTO: Polido
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td class="hide-m" width="80" style="font-size:0; line-height:0;">&nbsp;</td>
+                        <!-- Produto 07 (alinhado à direita) -->
+                        <td class="stack" width="190" valign="top">
+                          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                            <tr><td align="right"><a href="https://talentojoias.com.br/anel-ouro-branco-com-diamantes-e-safira-an229430.html"><img src="https://cdn.jsdelivr.net/gh/caiqueworks/talentojoias-dani@2defffcbac505862fdb6ab3469d91d0c287a771e/Assets/email-v2/07-anel-safira.jpg" width="170" height="170" alt="Anel ouro branco com diamantes e safira amarela" class="img-center-m" style="width:170px; height:auto; margin-left:auto;"></a></td></tr>
+                            <tr>
+                              <td class="center-m" align="right" style="padding:14px 0 0; font-family:'Poppins', Arial, Helvetica, sans-serif; font-size:10px; line-height:13px; font-weight:300; letter-spacing:0.3px; color:#222222;">
+                                <a href="https://talentojoias.com.br/anel-ouro-branco-com-diamantes-e-safira-an229430.html" style="color:#222222; text-decoration:none;">ANEL OURO BRANCO COM DIAMANTES E SAFIRA</a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="center-m" align="right" style="padding:10px 0 14px; font-family:'Poppins', Arial, Helvetica, sans-serif; font-size:8px; line-height:12px; font-weight:300; color:#333333; border-bottom:1px solid #BDBDBD;">
+                                METAL: Ouro<br>DIAMANTES: 36 Diamantes – 0,70Ct<br>COR: G<br>PUREZA: VS2<br>ACABAMENTO: Polido
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr><td colspan="3" class="row-gap" height="48" style="font-size:0; line-height:0; height:48px;">&nbsp;</td></tr>
+                      <!-- Linha 2 -->
+                      <tr>
+                        <!-- Produto 08 (alinhado à esquerda) -->
+                        <td class="stack stack-pad-lg" width="190" valign="top">
+                          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                            <tr><td align="left"><a href="https://talentojoias.com.br/colar-ouro-branco-com-diamantes-e-esmeraldas-cl259402.html"><img src="https://cdn.jsdelivr.net/gh/caiqueworks/talentojoias-dani@2defffcbac505862fdb6ab3469d91d0c287a771e/Assets/email-v2/08-colar-esmeraldas.jpg" width="170" height="170" alt="Colar ouro branco com diamantes e esmeraldas" class="img-center-m" style="width:170px; height:auto;"></a></td></tr>
+                            <tr>
+                              <td class="center-m" align="left" style="padding:14px 0 0; font-family:'Poppins', Arial, Helvetica, sans-serif; font-size:10px; line-height:13px; font-weight:300; letter-spacing:0.3px; color:#222222;">
+                                <a href="https://talentojoias.com.br/colar-ouro-branco-com-diamantes-e-esmeraldas-cl259402.html" style="color:#222222; text-decoration:none;">COLAR OURO BRANCO COM DIAMANTES E ESMERALDAS</a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="center-m" align="left" style="padding:10px 0 14px; font-family:'Poppins', Arial, Helvetica, sans-serif; font-size:8px; line-height:12px; font-weight:300; color:#333333; border-bottom:1px solid #BDBDBD;">
+                                METAL: Ouro<br>DIAMANTES: 21 Diamantes – 0,51Ct<br>COR: G<br>PUREZA: VS2<br>ACABAMENTO: Polido
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td class="hide-m" width="80" style="font-size:0; line-height:0;">&nbsp;</td>
+                        <!-- Produto 09 (alinhado à direita) -->
+                        <td class="stack" width="190" valign="top">
+                          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                            <tr><td align="right"><a href="https://talentojoias.com.br/brinco-ouro-amarelo-com-diamantes-e-corais-br560701.html"><img src="https://cdn.jsdelivr.net/gh/caiqueworks/talentojoias-dani@2defffcbac505862fdb6ab3469d91d0c287a771e/Assets/email-v2/09-brinco-corais.jpg" width="170" height="170" alt="Brinco ouro amarelo com diamantes e corais" class="img-center-m" style="width:170px; height:auto; margin-left:auto;"></a></td></tr>
+                            <tr>
+                              <td class="center-m" align="right" style="padding:14px 0 0; font-family:'Poppins', Arial, Helvetica, sans-serif; font-size:10px; line-height:13px; font-weight:300; letter-spacing:0.3px; color:#222222;">
+                                <a href="https://talentojoias.com.br/brinco-ouro-amarelo-com-diamantes-e-corais-br560701.html" style="color:#222222; text-decoration:none;">BRINCO OURO AMARELO COM DIAMANTES E CORAIS</a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="center-m" align="right" style="padding:10px 0 14px; font-family:'Poppins', Arial, Helvetica, sans-serif; font-size:8px; line-height:12px; font-weight:300; color:#333333; border-bottom:1px solid #BDBDBD;">
+                                METAL: Ouro<br>DIAMANTES: 28 Diamantes – 1,21Ct<br>COR: G<br>PUREZA: VS2<br>ACABAMENTO: Polido
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <!-- ===== SELECIONADOS: VERSÃO CELULAR =====
+                     Escondida por padrão (e no Outlook). No celular (.show-m) entra no lugar da grade 2x2:
+                     cada joia vira uma linha com a imagem de um lado e o texto do outro, alternando os lados.
+                     O texto fica alinhado em direção à imagem. -->
+                <tr>
+                  <td class="show-m" style="display:none; max-height:0; overflow:hidden; mso-hide:all; padding:0 20px;">
+                    <!--[if !mso]><!-->
+                    <!-- Joia 06: imagem à esquerda, texto à direita -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-bottom:1px solid #BDBDBD;">
+                      <tr>
+                        <td width="150" valign="middle" style="padding:0 0 20px;"><a href="https://talentojoias.com.br/anel-ouro-branco-com-diamante-esmeralda-e-tanzanita-an315102.html"><img src="https://cdn.jsdelivr.net/gh/caiqueworks/talentojoias-dani@2defffcbac505862fdb6ab3469d91d0c287a771e/Assets/email-v2/06-anel-tanzanita-esmeralda.jpg" width="150" height="150" alt="Anel ouro branco com diamante, esmeralda e tanzanita" style="width:150px; height:auto;"></a></td>
+                        <td valign="middle" align="left" style="padding:0 0 20px 16px; font-family:'Poppins', Arial, Helvetica, sans-serif; font-weight:300; text-align:left;">
+                          <div style="font-size:10px; line-height:14px; letter-spacing:0.3px; color:#222222;"><a href="https://talentojoias.com.br/anel-ouro-branco-com-diamante-esmeralda-e-tanzanita-an315102.html" style="color:#222222; text-decoration:none;">ANEL OURO BRANCO COM DIAMANTE ESMERALDA E TANZANITA</a></div>
+                          <div style="padding-top:8px; font-size:9px; line-height:13px; color:#333333;">METAL: Ouro 18k<br>DIAMANTES: 1 Diamante – 0,32Ct<br>COR: H<br>PUREZA: VS<br>ACABAMENTO: Polido</div>
+                        </td>
+                      </tr>
+                    </table>
+                    <div style="height:28px; line-height:28px; font-size:0;">&nbsp;</div>
+                    <!-- Joia 07: texto à esquerda, imagem à direita -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-bottom:1px solid #BDBDBD;">
+                      <tr>
+                        <td valign="middle" align="right" style="padding:0 16px 20px 0; font-family:'Poppins', Arial, Helvetica, sans-serif; font-weight:300; text-align:right;">
+                          <div style="font-size:10px; line-height:14px; letter-spacing:0.3px; color:#222222;"><a href="https://talentojoias.com.br/anel-ouro-branco-com-diamantes-e-safira-an229430.html" style="color:#222222; text-decoration:none;">ANEL OURO BRANCO COM DIAMANTES E SAFIRA</a></div>
+                          <div style="padding-top:8px; font-size:9px; line-height:13px; color:#333333;">METAL: Ouro<br>DIAMANTES: 36 Diamantes – 0,70Ct<br>COR: G<br>PUREZA: VS2<br>ACABAMENTO: Polido</div>
+                        </td>
+                        <td width="150" valign="middle" style="padding:0 0 20px;"><a href="https://talentojoias.com.br/anel-ouro-branco-com-diamantes-e-safira-an229430.html"><img src="https://cdn.jsdelivr.net/gh/caiqueworks/talentojoias-dani@2defffcbac505862fdb6ab3469d91d0c287a771e/Assets/email-v2/07-anel-safira.jpg" width="150" height="150" alt="Anel ouro branco com diamantes e safira amarela" style="width:150px; height:auto;"></a></td>
+                      </tr>
+                    </table>
+                    <div style="height:28px; line-height:28px; font-size:0;">&nbsp;</div>
+                    <!-- Joia 08: imagem à esquerda, texto à direita -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-bottom:1px solid #BDBDBD;">
+                      <tr>
+                        <td width="150" valign="middle" style="padding:0 0 20px;"><a href="https://talentojoias.com.br/colar-ouro-branco-com-diamantes-e-esmeraldas-cl259402.html"><img src="https://cdn.jsdelivr.net/gh/caiqueworks/talentojoias-dani@2defffcbac505862fdb6ab3469d91d0c287a771e/Assets/email-v2/08-colar-esmeraldas.jpg" width="150" height="150" alt="Colar ouro branco com diamantes e esmeraldas" style="width:150px; height:auto;"></a></td>
+                        <td valign="middle" align="left" style="padding:0 0 20px 16px; font-family:'Poppins', Arial, Helvetica, sans-serif; font-weight:300; text-align:left;">
+                          <div style="font-size:10px; line-height:14px; letter-spacing:0.3px; color:#222222;"><a href="https://talentojoias.com.br/colar-ouro-branco-com-diamantes-e-esmeraldas-cl259402.html" style="color:#222222; text-decoration:none;">COLAR OURO BRANCO COM DIAMANTES E ESMERALDAS</a></div>
+                          <div style="padding-top:8px; font-size:9px; line-height:13px; color:#333333;">METAL: Ouro<br>DIAMANTES: 21 Diamantes – 0,51Ct<br>COR: G<br>PUREZA: VS2<br>ACABAMENTO: Polido</div>
+                        </td>
+                      </tr>
+                    </table>
+                    <div style="height:28px; line-height:28px; font-size:0;">&nbsp;</div>
+                    <!-- Joia 09: texto à esquerda, imagem à direita -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-bottom:1px solid #BDBDBD;">
+                      <tr>
+                        <td valign="middle" align="right" style="padding:0 16px 20px 0; font-family:'Poppins', Arial, Helvetica, sans-serif; font-weight:300; text-align:right;">
+                          <div style="font-size:10px; line-height:14px; letter-spacing:0.3px; color:#222222;"><a href="https://talentojoias.com.br/brinco-ouro-amarelo-com-diamantes-e-corais-br560701.html" style="color:#222222; text-decoration:none;">BRINCO OURO AMARELO COM DIAMANTES E CORAIS</a></div>
+                          <div style="padding-top:8px; font-size:9px; line-height:13px; color:#333333;">METAL: Ouro<br>DIAMANTES: 28 Diamantes – 1,21Ct<br>COR: G<br>PUREZA: VS2<br>ACABAMENTO: Polido</div>
+                        </td>
+                        <td width="150" valign="middle" style="padding:0 0 20px;"><a href="https://talentojoias.com.br/brinco-ouro-amarelo-com-diamantes-e-corais-br560701.html"><img src="https://cdn.jsdelivr.net/gh/caiqueworks/talentojoias-dani@2defffcbac505862fdb6ab3469d91d0c287a771e/Assets/email-v2/09-brinco-corais.jpg" width="150" height="150" alt="Brinco ouro amarelo com diamantes e corais" style="width:150px; height:auto;"></a></td>
+                      </tr>
+                    </table>
+                    <!--<![endif]-->
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" style="padding:40px 20px 48px;">
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
+                      <td class="btn-dark" bgcolor="#222222" style="background-color:#222222; padding:3px 14px; font-size:8px; line-height:10px; mso-line-height-rule:exactly;">
+                        <a href="https://talentojoias.com.br/shop.html" style="font-family:'Poppins', Arial, Helvetica, sans-serif; font-size:8px; line-height:10px; font-weight:300; letter-spacing:1px; color:#FFFFFF; text-decoration:none;">VER MAIS</a>
+                      </td>
+                    </tr></table>
+                  </td>
+                </tr>
+
+              </table>
+              <!--[if gte mso 9]>
+                </v:textbox>
+              </v:rect>
+              <![endif]-->
+            </td>
+          </tr>
+
+          <!-- ============ COLAGEM EDITORIAL (fundo branco) ============
+               As fotos grandes (cinza e vermelha) são JPGs estáticos (fotos 11 e 16). As pequenas (amarela e azul)
+               são GIFs em loop, recortados do Dani_img_CARROSSEL_01.gif (AE_PhotoSwap) com a mesma linha do tempo (5,6s).
+               Os textos são HTML real, encaixados nos espaços. No Outlook do Windows os GIFs mostram só o 1º quadro.
+               Área total de 474px (a composição de fotos ocupa ~415px), como na referência. -->
+          <!-- Título no mesmo estilo de "SELECIONADOS PARA VOCÊ": caixa alta, espaçado, fio fino embaixo -->
+          <tr>
+            <td align="center" bgcolor="#FFFFFF" class="px" style="background-color:#FFFFFF; padding:48px 63px 28px;">
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
+                <td class="section-title serif" align="center" style="font-family:'Fraunces', Georgia, 'Times New Roman', serif; font-size:14px; line-height:20px; font-weight:300; letter-spacing:2px; color:#222222; padding:0 0 5px; border-bottom:1px solid #BDBDBD;">
+                  PEÇAS QUE ACOMPANHAM CADA MOMENTO
+                </td>
+              </tr></table>
+            </td>
+          </tr>
+          <tr>
+            <td bgcolor="#FFFFFF" class="px" style="background-color:#FFFFFF; padding:0 63px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <!-- Coluna esquerda: foto cinza (um pouco mais baixa que a amarela, como na referência) + (texto | foto azul) -->
+                  <td class="stack stack-pad" width="263" valign="top">
+                    <table role="presentation" width="263" align="center" cellpadding="0" cellspacing="0" border="0" style="width:263px;">
+                      <tr>
+                        <td align="right" class="stack-pad" style="padding-top:28px;">
+                          <!-- IMAGEM 10 | Colagem: fundo cinza, ESTÁTICA | 201x177 (Assets/email-v2/10-colagem-cinza.jpg, foto 11, exportada em 2x) -->
+                          <a href="https://talentojoias.com.br/catalogo-day-to-night"><img src="https://cdn.jsdelivr.net/gh/caiqueworks/talentojoias-dani@2defffcbac505862fdb6ab3469d91d0c287a771e/Assets/email-v2/10-colagem-cinza.jpg" width="201" height="177" alt="Modelo com anel Talento sobre fundo cinza" class="img-center-m" style="width:201px; height:auto; margin-left:auto;"></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding-top:14px;">
+                          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                              <td valign="middle" align="right" style="padding-right:10px; font-family:'Poppins', Arial, Helvetica, sans-serif; font-size:8px; line-height:12px; font-weight:300; color:#333333;">
+                                Quando o dia silencia, a alta joalheria revela seu lado mais fascinante. Brilho inconfundível para marcar presença com absoluta exclusividade.
+                              </td>
+                              <td width="138" valign="top">
+                                <!-- IMAGEM 13 | Colagem: fundo azul | 138x140 (Assets/email-v2/13-colagem-azul.gif) -->
+                                <a href="https://talentojoias.com.br/catalogo-day-to-night"><img src="https://cdn.jsdelivr.net/gh/caiqueworks/talentojoias-dani@2defffcbac505862fdb6ab3469d91d0c287a771e/Assets/email-v2/13-colagem-azul.gif" width="138" height="140" alt="Modelo com anel Talento sobre fundo azul" style="width:138px; height:auto;"></a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td class="hide-m" width="12" style="font-size:0; line-height:0;">&nbsp;</td>
+                  <!-- Coluna direita: (foto amarela | texto) + foto vermelha -->
+                  <td class="stack" width="199" valign="top">
+                    <table role="presentation" width="199" align="center" cellpadding="0" cellspacing="0" border="0" style="width:199px;">
+                      <tr>
+                        <td>
+                          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                              <td width="84" valign="top">
+                                <!-- IMAGEM 11 | Colagem: fundo amarelo | 84x106 (Assets/email-v2/11-colagem-amarelo.gif) -->
+                                <a href="https://talentojoias.com.br/catalogo-day-to-night"><img src="https://cdn.jsdelivr.net/gh/caiqueworks/talentojoias-dani@2defffcbac505862fdb6ab3469d91d0c287a771e/Assets/email-v2/11-colagem-amarelo.gif" width="84" height="106" alt="Modelo com brinco Talento sobre fundo amarelo" style="width:84px; height:auto;"></a>
+                              </td>
+                              <td valign="top" style="padding:0 0 0 10px; font-family:'Poppins', Arial, Helvetica, sans-serif; font-size:8px; line-height:12px; font-weight:300; color:#333333;">
+                                A sofisticação sutil que ilumina as suas manhãs e tardes. Peças de presença magnética que traduzem a elegância natural em cada detalhe da sua rotina.
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding-top:12px;">
+                          <!-- IMAGEM 12 | Colagem: fundo vermelho, ESTÁTICA | 199x228 (Assets/email-v2/12-colagem-vermelho.jpg, foto 16, exportada em 2x) -->
+                          <a href="https://talentojoias.com.br/catalogo-day-to-night"><img src="https://cdn.jsdelivr.net/gh/caiqueworks/talentojoias-dani@2defffcbac505862fdb6ab3469d91d0c287a771e/Assets/email-v2/12-colagem-vermelho.jpg" width="199" height="228" alt="Modelo com brinco longo Talento sobre fundo vermelho" style="width:199px; height:auto;"></a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" bgcolor="#FFFFFF" style="background-color:#FFFFFF; padding:36px 20px 48px;">
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
+                <td class="btn-dark" bgcolor="#222222" style="background-color:#222222; padding:3px 14px; font-size:8px; line-height:10px; mso-line-height-rule:exactly;">
+                  <a href="https://talentojoias.com.br/catalogo-day-to-night" style="font-family:'Poppins', Arial, Helvetica, sans-serif; font-size:8px; line-height:10px; font-weight:300; letter-spacing:1px; color:#FFFFFF; text-decoration:none;">EXPLORE AS PEÇAS</a>
+                </td>
+              </tr></table>
+            </td>
+          </tr>
+
+          <!-- ============ FOOTER ============ -->
+          <tr>
+            <td align="center" bgcolor="#222222" style="background-color:#222222; padding:28px 20px 24px;">
+              <p style="margin:0; font-family:'Poppins', Arial, Helvetica, sans-serif; font-size:8px; line-height:17px; font-weight:300; letter-spacing:1px; color:#E6E6E6;">
+                Talento Joias &bull; MEBR Varejo de Joias Ltda. | CNPJ: 08.320.167/0001-41<br>
+                Você recebeu este email por estar cadastrado em nossa lista.<br>
+                <a href="https://caiqueworks.github.io/talentojoias-dani/" style="color:#E6E6E6; text-decoration:underline;">Ver no navegador</a> | <a href="#" style="color:#E6E6E6; text-decoration:underline;">Descadastrar</a>
+              </p>
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-top:16px;">
+                <tr>
+                  <!-- ÍCONES | 18x18 (PNG branco 36x36, fundo transparente, em Assets/email-v2/) -->
+                  <td style="padding:0 9px;"><a href="https://www.facebook.com/talentojoias"><img src="https://cdn.jsdelivr.net/gh/caiqueworks/talentojoias-dani@2defffcbac505862fdb6ab3469d91d0c287a771e/Assets/email-v2/icon-facebook.png" width="18" height="18" alt="Facebook" style="width:18px; height:18px;"></a></td>
+                  <td style="padding:0 9px;"><a href="https://www.instagram.com/talentojoias/"><img src="https://cdn.jsdelivr.net/gh/caiqueworks/talentojoias-dani@2defffcbac505862fdb6ab3469d91d0c287a771e/Assets/email-v2/icon-instagram.png" width="18" height="18" alt="Instagram" style="width:18px; height:18px;"></a></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+        </table>
+        <!--[if mso]></td></tr></table><![endif]-->
+
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
